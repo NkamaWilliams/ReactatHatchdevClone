@@ -1,0 +1,13 @@
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <h1 className="text-2xl md:text-8xl font-bold">Welcome to the only Hitlist you'll ever need</h1>
+
+      <p className="text-xl">Sponsored by John Wick!</p>
+
+      <Link href="/target" className="px-6 py-2 text-2xl bg-white text-black hover:bg-gray-600 hover:text-white hover:cursor-pointer transition-all duration-300 active:scale-95 font-semibold rounded-2xl">Submit yor target!</Link>
+    </main>
+  );
+}
